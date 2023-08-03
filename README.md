@@ -1,6 +1,6 @@
 # peopleData
 
-d\Download the zip file.
+Download the zip file.
 Extract the zip at C:\xampp\htdocs\
 Open xampp control.
 Start xampp.
