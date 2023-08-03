@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>people data</title>
@@ -14,13 +15,11 @@
 		$filename = "data.json";
 		$data = file_get_contents($filename); //data read from json file;
 		$users = json_decode($data); //decode a data
-
-		$message = "<h3 class='text-success'>JSON file data</h3>";
 	} else {
-		$message = "<h3 class='text-danger'>JSON file Not found</h3>";
+		echo "<script type='text/javascript'>alert('File does not Exist');</script>";
 	} ?>
-	<div class="container">
-		<div class="row mt-5">
+	<div class="container my-5">
+		<div class="row ">
 			<form method="post">
 				<span class="title"> PEOPLE DATA</span>
 				<?php
@@ -30,11 +29,10 @@
 						$length = $_POST["button1"] + 1;
 					} else {
 						$length = $_POST["button1"];
+						echo "<script type='text/javascript'>alert('No more people!');</script>";
 					}
 				}
-				if (count($users) > $length) {
-					echo '<button type="submit" class="btn float-right" id="update" name="button1" value=' . $length . ' >NEXT PERSON</button>';
-				}
+				echo '<button type="submit" class="btn float-right" id="update" name="button1" value=' . $length . ' >NEXT PERSON</button>';
 				?>
 			</form>
 		</div>
@@ -57,5 +55,10 @@
 		<span class="d-flex justify-content-center align-items-center footer"> CURRENTLY <?= $length ?> PEOPLE SHOWING </span>
 	</div>
 </body>
+<script type="text/javascript">
+	function jsFunction() {
+		alert('Execute Javascript Function Through PHP');
+	}
+</script>
 
 </html>
