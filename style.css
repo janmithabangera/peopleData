@@ -1,0 +1,62 @@
+body {
+    background-color: #46afe6  !important;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 50rem !important;
+    }
+}
+
+.title {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Goudy Bookletter 1911", sans-serif !important;
+}
+
+.table tbody tr>td.item1 {
+    background-color: #c6e4fb !important;
+    font-size: 1.5rem;
+    font-weight:600;
+}
+
+.table tbody tr>td.item2 {
+    background-color: #ffffff !important;
+    font-size: 1.5rem;
+    font-weight:600;
+}
+
+.table tbody tr>td>span {
+    color: #000000 !important;
+}
+
+.table tbody tr>td.counter {
+    width: 3rem;
+    background-color: #6bce8b !important;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Goudy Bookletter 1911", sans-serif !important;
+
+}
+.tablerounededCorner {
+    border-radius: 1.2em;
+}
+
+.roundedTable {
+    border-radius: 1.2em;
+    overflow: hidden;
+    box-shadow: 0px 3px 0px #3583b0;
+}
+
+.footer{
+    font-family: "Goudy Bookletter 1911", sans-serif !important;
+    color: #ffffff;
+}
+
+.btn {
+    background-color: #f29c61 !important;
+    color: #ffffff !important;
+    border-radius: 1.2em !important;
+}
